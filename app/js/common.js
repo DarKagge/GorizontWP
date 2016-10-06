@@ -75,9 +75,19 @@ $(function() {
 
 
         $(".secondary-menu").on("click",function(){
-           $(this).toggleClass('clicked');
+            if($(this).hasClass('clicked')){
+                $(this).find('ul').slideUp(1000);
+                $(this).addClass('clicked');
+            }else{
+                $(this).find('ul').slideDown(1000);
+                $(this).removeClass('clicked');
+            }
+
+
         });
-        $(".secondary-menu > a").unbind('click');
+        $(".secondary-menu > a").on('click', function(e){
+            e.preventDefault();
+        });
 
 
 
