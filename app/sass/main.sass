@@ -213,7 +213,7 @@
 
 
 .office-bid
-  margin-top: 15px
+  margin-top: 30px
   p
     display: inline-block
     font-size: 12px
@@ -573,6 +573,9 @@
   li
     float: left
     position: relative
+    &:last-child
+      a:after
+        display: none
   a
     color: #555
     padding-right: 15px
@@ -584,8 +587,9 @@
       content: ''
       border: 5px solid transparent
       border-left: 5px solid #555
-      *:last-child
-        border: none
+
+
+
 
 
 .office-h1.office-h1_b
@@ -924,12 +928,12 @@
     .lSPrev
       position: absolute
       top: 280px
-      left: 50%
+      left: 50.5%
       margin-left: -34px
       border-right: 1px solid #0c4da2
     .lSNext
      position: absolute
      top: 280px
-     right: 50%
+     right: 49.8%
      margin-right: -30px
 @import "media"

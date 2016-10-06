@@ -33,16 +33,21 @@
       left: 300px
 
   li
-    margin-top: 15px
+
     & > ul
       display: none
   a
     color: #fff
+    padding-top: 15px
     font-size: 25px
     padding: 15px
+    display: block
+
     text-decoration: none
     &:hover
-      color: #19ff00
+      color: #fff
+      background-color: #ff720b
+      border-radius: 30px
 
 .secondary-menu
   position: relative
@@ -50,12 +55,18 @@
     position: absolute
     content: ''
     right: 20px
-    top:  10px
+    top:  30px
     border: 10px solid transparent
     border-top: 10px solid #fff
 
   &.clicked > ul
     display: block
+
+  &.clicked
+    &:after
+      top: 20px
+      border: 10px solid transparent
+      border-bottom: 10px solid #fff
 .gorizont-head-menu
   width: 100%
   min-height: 30px

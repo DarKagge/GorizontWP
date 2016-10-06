@@ -86,6 +86,7 @@
     display: block
     span
       transition: .4s all
+      background-color: #f15a22
 
     &.active
 
@@ -276,6 +277,11 @@
 
       &:before
         display: none
+
+@media only screen and (max-width : 642px)
+  .bl-button, .or-button
+    width: 100%
+    margin-bottom: 10px
 @media only screen and (max-width : 549px)
   .category-colors
     margin-bottom: 10px
